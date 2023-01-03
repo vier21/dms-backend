@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mulai */
+body .pembungkus{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    background-color:aliceblue;
+}
+
+body .pembungkus .navigasibar{
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+body .pembungkus .navigasibar .profile{
+    width: 90%;
+    height: 40%;
+    /* background-color: blue; */
+    margin-top: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+body .pembungkus .navigasibar .profile h2{
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    font-size: medium
+}
+body .pembungkus .navigasibar .profile p{
+    color: darkgray;
+    font-size: small;
+    margin: 7px;
+    padding: 10px;
+    border-bottom:1px solid #bf33c1;
+}
+
+body .pembungkus .navigasibar .listbar{
+    width: 90%;
+    height:50%;
+    /* background-color: blue; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 3px;
+    color: white;
+    font-weight: bold;
+    flex-direction: column;
+}
+body .pembungkus .navigasibar .listbar .btn{
+    display:flex ;
+}
+body .pembungkus .navigasibar .listbar .btn p{
+    margin: 5px;
+}
+
+body .pembungkus .navigasibar .listbar .collapse ul li a{
+    text-decoration: none;
+ 
+    margin-bottom: 5px;
+}
+
+body .pembungkus .isi{
+    width: 80%;
+    height: 100vh;
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+body .pembungkus .isi .tabell{
+    width: 90%;
+    height: 80%;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    display: flex;
+    
+    justify-content: center;
+}
+
+body .pembungkus .isi .tabell .table{
+    border-collapse: separate;
+    border-spacing:0 12px;
+}
+
+body .pembungkus .isi .tabell .table td{
+    vertical-align: middle;
+}
+body .pembungkus .isi .tabell .table tbody th{
+    vertical-align: middle;
+}
+
+body .pembungkus .isi .tabell .table tr{
+    background-color:aliceblue;
+   
+}
+
+body .pembungkus .isi .tabell .table tr:hover{
+    background-color: #d9d9d9;
+}
+body .pembungkus .isi .tabell .table .col1{
+    border-right: hidden;
+}
+body .pembungkus .isi .tabell .table .col2{
+    border-left: hidden;
+    border-right: hidden;
+}
+body .pembungkus .isi .tabell .table .col3{
+    border-right: hidden;
+    border-left: hidden;
+}
+body .pembungkus .isi .tabell .table .col4{
+    border-left: hidden;
+}
+
+body .pembungkus .isi .tabell .table thead th{
+    border-bottom: 2px solid  #bf33c1;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+body .pembungkus .isi .masukan{
+    /* background-color: blue; */
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
