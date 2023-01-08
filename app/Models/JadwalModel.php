@@ -5,17 +5,18 @@ use CodeIgniter\Model;
 
 class JadwalModel extends Model
 {
-    // ...
+    
     protected $table = 'jadwal';
     
     protected $primaryKey = 'id_jadwal';
-    protected $allowedFields = ['jam_datang','jam_berangakat','keterangan','nama_kapal', 'id_jadwal'];
+    protected $allowedFields = ['jam_datang','jam_berangakat','keterangan','nama_kapal', 'id_jadwal','id_user'];
 
     protected $validationRules = [
         'jam_datang'     => 'required',
         'jam_berangakat'  => 'required',
         'keterangan'     => 'required|max_length[50]',
         'nama_kapal'     => 'required',
+       
     ];
 
 
@@ -29,6 +30,10 @@ class JadwalModel extends Model
 
     public function deleteJadwal($id){
         $this->delete($id);
+    }
+
+    public function getAllJadwalById($user_id){
+        return $this->where('id_user',$user_id)->findAll();
     }
 
     

@@ -48,6 +48,7 @@ $routes->get('user/(:segment)/delete', 'UserController::deleteJadwal/$1');
 $routes->add('/userlist/edit/(:any)', 'UserController::editJadwal/$1');
 $routes->add('/user/(:segment)/edit/','UserController::editJadwal/$1');
 $routes->add('/user/edit','UserController::editJadwal');
+$routes->add('/user/(:segment)/jadwal','UserController::jadwalUser/$1');
 
 /*
  * --------------------------------------------------------------------

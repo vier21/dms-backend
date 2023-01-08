@@ -24,6 +24,7 @@
 
       <form action="<?= base_url() ?>/user/input" method="post">
         <div class="text-white">
+        <input type="hidden" name="id_user" class="form-control p-3 mb-2 bg-secondary text-white" id="exampleFormControlInput1" placeholder="Nama Kapal" value="<?= user()->id ?>">
           <label for="nama_kapal" class="form-label">Nama Kapal :</label>
           <input type="text" name="nama_kapal" class="form-control p-3 mb-2 bg-secondary text-white" id="exampleFormControlInput1" placeholder="Nama Kapal">
 

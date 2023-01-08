@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,6 +17,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+    font-family: 'Poppins', sans-serif;
 	vertical-align: baseline;
 }
 
@@ -78,11 +80,11 @@ body .pembungkus .navigasibar .profile h2{
     font-weight: bold;
     color: white;
     margin: 5px;
-    font-size: medium
+    font-size: 22px
 }
 body .pembungkus .navigasibar .profile p{
     color: darkgray;
-    font-size: small;
+    font-size: 18px;
     margin: 7px;
     padding: 10px;
     border-bottom:1px solid #bf33c1;

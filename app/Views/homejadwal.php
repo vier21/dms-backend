@@ -69,7 +69,7 @@
           </thead>
           <tbody>
             <?php $i = 1 ?>
-            <?php foreach ($jadwal as $jd) : ?>
+            <?php foreach ($jadwaluser as $jd) : ?>
               <tr>
                 <th scope="row"><?= $i++; ?></th>
 

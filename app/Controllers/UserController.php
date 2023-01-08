@@ -34,6 +34,7 @@ class UserController extends BaseController
                 'jam_berangakat' => $this->request->getVar('jam_berangakat'),
                 'jam_datang' => $this->request->getVar('jam_datang'),
                 'keterangan' => $this->request->getVar('keterangan'),
+                'id_user' => $this->request->getVar('id_user'),
             ];
     
             $this->jadwalModel->insert($data);
@@ -55,6 +56,7 @@ class UserController extends BaseController
                 'jam_berangakat' => $this->request->getVar('jam_berangakat'),
                 'jam_datang' => $this->request->getVar('jam_datang'),
                 'keterangan' => $this->request->getVar('keterangan'),
+               
             ];
 
             $this->jadwalModel->update($id,$data);
@@ -65,11 +67,23 @@ class UserController extends BaseController
 
     }
 
+    public function jadwalUser($user_id){
+        $jadwal = $this->jadwalModel->getAllJadwalById($user_id);
+        $data = [
+            'jadwaluser' => $jadwal,
+        ];
+
+        return view('homejadwal',$data);
+
+    }
+
     public function deleteJadwal($id)
     {
         $this->jadwalModel->deleteJadwal($id);
         return redirect()->to('/');
     }
+
+    
 
     public function admin()
     {
