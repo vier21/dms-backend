@@ -49,7 +49,7 @@
         </div>
         <div class="text-center">
 
-          <button type="submit" class="btn btn-primary mt-3 rounded-1 btn-block w-100" style="font-weight:bold;">Register Now!</button>
+          <button type="submit" class="btn btn-primary mt-3 rounded-1 btn-block w-100" style="font-weight:bold;">Go!</button>
         </div>
       </form>
 

@@ -10,6 +10,8 @@
             <h4 style="line-height: 0.7;">Hello Capt</h4>
             <h6>Dock Management System</h6>
         </div>
+        <?= view('Myth\Auth\Views\_message_block') ?>
+
         <form action="<?= route_to('login') ?>" method="post">
             <?= csrf_field() ?>
             <div class="">

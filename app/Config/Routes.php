@@ -39,16 +39,19 @@ $routes->set404Override();
 $routes->add('/', 'UserController::index', ['filter' => 'role:user']);
 $routes->add('/user', 'UserController::index', ['filter' => 'role:user']);
 $routes->add('/usercontroller/user', 'UserController::index', ['filter' => 'role:user']);
-$routes->get('/admin', 'UserController::admin', ['filter' => 'role:admin']);
+
 $routes->get('/usercontroller/admin', 'UserController::admin', ['filter' => 'role:admin']);
 $routes->match(['get','post'],'/user/input', 'UserController::inputJadwal');
 $routes->add('input', 'UserController::inputJadwal');
 $routes->add('/userlist/delete/(:any)', 'UserController::deleteJadwal/$1');
 $routes->get('user/(:segment)/delete', 'UserController::deleteJadwal/$1');
-$routes->add('/userlist/edit/(:any)', 'UserController::editJadwal/$1');
 $routes->add('/user/(:segment)/edit/','UserController::editJadwal/$1');
 $routes->add('/user/edit','UserController::editJadwal');
 $routes->add('/user/(:segment)/jadwal','UserController::jadwalUser/$1');
+$routes->add('/admin','AdminController::index');
+$routes->add('/admin/(:segment)/edit', 'AdminController::editUser/$1');
+$routes->get('/admin/(:segment)/delete', 'AdminController::deleteUser/$1');
+
 
 /*
  * --------------------------------------------------------------------

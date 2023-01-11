@@ -56,7 +56,7 @@
     <div class=" isi">
 
       <div class="tabell">
-        <table class="table text-center mt-2">
+        <table class="table table-striped text-center mt-2">
           <thead class="thead-dark mb-5">
             <tr>
               <th scope="col">No</th>
@@ -64,7 +64,7 @@
               <th scope="col">Jadwal Kedatangan</th>
               <th scope="col">Jadwal berangkat</th>
               <th scope="col">keterangan</th>
-              <th scope="col">Action</th>
+             
             </tr>
           </thead>
           <tbody>
@@ -77,10 +77,7 @@
                 <td><?= $jd['jam_datang'];  ?></td>
                 <td><?= $jd['jam_berangakat'];  ?></td>
                 <td><?= $jd['keterangan'];  ?></td>
-                <td>
-                  <a class="btn btn-primary" type="button" href="<?= base_url('/user/' . $jd['id_jadwal'] . '/edit') ?>">Edit</a>
-                  <a class="btn btn-primary" type="button" href="<?= base_url('/user/' . $jd['id_jadwal'] . '/delete') ?>">Delete</a>
-                </td>
+                
               </tr>
             <?php endforeach ?>
 

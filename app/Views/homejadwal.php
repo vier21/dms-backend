@@ -56,7 +56,7 @@
     <div class=" isi">
 
       <div class="tabell">
-        <table class="table text-center mt-2">
+        <table class="table table-striped text-center mt-2">
           <thead class="thead-dark mb-5">
             <tr>
               <th scope="col">No</th>

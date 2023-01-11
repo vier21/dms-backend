@@ -22,29 +22,32 @@
         <hr style="border-top: 3px solid #BF33C1; ">
       </div>
 
-      <form action="<?= base_url('/user/'.$jadwal['id_jadwal'].'/edit')?>" method="post">
+      <form action="<?= base_url('/admin/'.$users['id'].'/edit')?>" method="post">
         <div class="text-white">
-          <label for="nama_kapal" class="form-label">Nama Kapal :</label>
-          <input type="text" name="nama_kapal" class="form-control p-3 mb-2 bg-secondary text-white" id="exampleFormControlInput1" placeholder="Nama Kapal" value="<?= $jadwal['nama_kapal'] ?>">
+          <label for="perusahaan" class="form-label">Nama Perusahaan:</label>
+          <input type="text" name="perusahaan" class="form-control p-3 mb-2 bg-secondary text-white"  placeholder="Perusahaan" value="<?= $users['perusahaan'] ?>">
 
         </div>
         <div class="text-white">
-          <label for="jam_datang" class="form-label">Jadwal Kedatangan :</label>
-          <input type="datetime-local" name="jam_datang" class="form-control -3 mb-2 bg-secondary text-white" id="exampleFormControlInput1" placeholder="Jadwal Kedatangan" value="<?= $jadwal['jam_datang'] ?>">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" name="email" class="form-control -3 mb-2 bg-secondary text-white"  placeholder="email" value="<?= $users['email'] ?>">
 
         </div>
 
         <div class="text-white">
-          <label for="jam_berangakat" class="form-label">Jadwal Kepergian :</label>
-          <input type="datetime-local" name="jam_berangakat" class="form-control p-3 mb-2 bg-secondary text-white" id="exampleFormControlInput1" placeholder="Jadwal Kepergian" value="<?= $jadwal['jam_berangakat'] ?>">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" name="password" class="form-control p-3 mb-2 bg-secondary text-white" placeholder="password" value="<?= $users['password_hash'] ?>">
 
         </div>
         <div class="text-white">
-          <label for="keterangan" class="form-label">Keterangan :</label>
+          <label for="npwp" class="form-label">NPWP:</label>
 
-          <input type="text" name="keterangan" class="form-control p-3 mb-2 bg-secondary text-white" id="exampleFormControlInput1" placeholder="cth : Mengangkut Barang" value="<?= $jadwal['keterangan'] ?>">
+          <input type="number" name="npwp" class="form-control p-3 mb-2 bg-secondary text-white"  value="<?= $users['npwp'] ?>">
+        </div>
+        <div class="text-white">
+          <label for="kontak" class="form-label">Kontak:</label>
 
-
+          <input type="number" name="kontak" class="form-control p-3 mb-2 bg-secondary text-white" value="<?= $users['kontak'] ?>">
         </div>
         <div class="text-center">
 

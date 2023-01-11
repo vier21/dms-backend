@@ -3,14 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\JadwalModel;
+use \Myth\Auth\Models\UserModel;
 
 class UserController extends BaseController
 {
     protected $jadwalModel;
+    protected $userModel;
     
     public function __construct()
     {
         $this->jadwalModel = new JadwalModel();
+        $this->userModel = new UserModel();
     }
 
     public function index()
@@ -81,12 +84,5 @@ class UserController extends BaseController
     {
         $this->jadwalModel->deleteJadwal($id);
         return redirect()->to('/');
-    }
-
-    
-
-    public function admin()
-    {
-        return view('homeadmin');
     }
 }
