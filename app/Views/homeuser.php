@@ -42,7 +42,7 @@
           </svg>
           <p>Kontak Admin</p>
         </button>
-        <div class="collapse show" id="orders-collapse" style="">
+        <div class="collapse" id="orders-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="#" class="text-muted">Hapus Akun</a></li>
             <li><a href="#" class="text-muted">FAQ</a></li>
